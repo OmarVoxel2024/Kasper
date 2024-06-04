@@ -409,8 +409,13 @@
   /* Footer Start */
 
   .footer-shadow {
-    padding: calc(var(--main-padding) * 2) 0;
+    padding: 20px;
   }
+
+  footer .container > p {
+    width: 100%;
+    font-size: 14px;
+}
 
   /* Footer End */
 
