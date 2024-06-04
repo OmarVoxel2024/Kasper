@@ -478,6 +478,10 @@ header .container::before {
   color: white;
 }
 
+.portfolio li::selection {
+  display: none;
+}
+
 .portfolio li:hover {
   cursor: default;
   color: white;
@@ -1523,10 +1527,10 @@ body {
 .navigate {
   position: fixed;
   z-index: 100;
-  right: 10px;
-  transform: translateY(calc(100vh - 50px));
   width:  40px;
   height: 40px;
+  right: 10px;
+  transform: translateY(calc(100vh - 50px));
   font-size: 23px;
   border-radius: 5px;
   display: flex;
@@ -1539,11 +1543,11 @@ body {
   -o-border-radius: 5px;
   top: 0;
   color: white;
+  overflow: hidden;
   -webkit-transform: translateY(calc(100vh - 50px));
   -moz-transform: translateY(calc(100vh - 50px));
   -ms-transform: translateY(calc(100vh - 50px));
   -o-transform: translateY(calc(100vh - 50px));
-  overflow: hidden;
 }
 
 .navigate i {

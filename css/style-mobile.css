@@ -350,6 +350,12 @@
     background-color: #fafafa;
   }
 
+  .special-request p {
+    font-size: 15px;
+    width: 90vw;
+    text-align: center;
+  }
+
   /* Pricing End */
 
 
@@ -363,6 +369,7 @@
 
   .subscribe p {
     width: 90vw;
+    text-align: center;
   }
 
   .subscribe .email-input {
