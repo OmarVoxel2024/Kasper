@@ -1,0 +1,408 @@
+@media (max-width: 768px) {
+  /* Header Start */
+
+  .links {
+    flex-direction: column;
+    position: absolute;
+    top: 41px;
+    left: -32px;
+    visibility: hidden;
+    opacity: 0;
+    transition: .5s;
+    -webkit-transition: .5s;
+    -moz-transition: .5s;
+    -ms-transition: .5s;
+    -o-transition: .5s;
+}
+
+  .links a {
+    background-color: #ffffff50;
+    padding: 0 !important;
+    width: 120px;
+    height: 40px;
+    display: flex;
+    align-items: center;
+    padding-left: 10px !important;
+    transition: .3s !important;
+    -webkit-transition: .3s !important;
+    -moz-transition: .3s !important;
+    -ms-transition: .3s !important;
+    -o-transition: .3s !important;
+}
+
+  .links li:not(:last-child) {
+    border-bottom: 2px solid #ddd;
+  }
+
+  .links a:active {
+    padding-left: 25px !important;
+    color: var(--main-color);
+    box-shadow: 0 2px 0 0 var(--main-color);
+  }
+
+  .links li:last-child a:hover {
+    box-shadow: none;
+  }
+
+  .menu {
+    visibility: visible;
+    opacity: 1;
+    width: 30px;
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+    position: relative;
+  }
+
+  .search {
+    order: -1;
+  }
+
+  .menu span {
+    width: 100%;
+    height: 2px;
+    background-color: white;
+  }
+
+  .menu span:nth-child(2) {
+    width: 60%;
+    align-self: flex-end;
+    transition: .5s;
+    -webkit-transition: .5s;
+    -moz-transition: .5s;
+    -ms-transition: .5s;
+    -o-transition: .5s;
+}
+
+  .menu-container {
+    position: relative;
+  }
+
+  .menu input {
+    position: absolute;
+    opacity: 0;
+    height: 200%;
+    width: 200%;
+    left: -50%;
+    top: -50%;
+  }
+
+  .links:has(~.menu :checked) {
+    opacity: 1;
+    visibility: visible;
+  }
+
+  .links li:first-child:has(~li a:active) a {
+    color: white;
+    box-shadow: none;
+  }
+
+  .menu:has(:checked) span:nth-child(2) {
+    width: 100%;
+  }
+
+  .landing-bg {
+    background-image: url(../images/landing-mobile.jpg);
+  }
+
+  header .container {
+    transform: translateY(5px);
+    -webkit-transform: translateY(5px);
+    -moz-transform: translateY(5px);
+    -ms-transform: translateY(5px);
+    -o-transform: translateY(5px);
+    padding-bottom: 5px;
+}
+
+  .links li:last-child a:active {
+    box-shadow: none;
+  }
+
+  /* Header End */
+
+  /* Landing Start */
+
+  .landing .text {
+    width: 100vw;
+    justify-content: center;
+    padding: 0 !important;
+    position: relative;
+    transition: .5s;
+    -webkit-transition: .5s;
+    -moz-transition: .5s;
+    -ms-transition: .5s;
+    -o-transition: .5s;
+}
+
+  .landing h1 {
+    font-size: 20px;
+    margin-left: 15px !important;
+}
+
+  .landing p {
+    font-size: 12px !important;
+    width: 90vw !important;
+  }
+
+  .landing .text * {
+    margin-left: auto;
+    margin-right: auto;
+    transform: translate(0);
+    -webkit-transform: translate(0);
+    -moz-transform: translate(0);
+    -ms-transform: translate(0);
+    -o-transform: translate(0);
+}
+
+.landing-bg:has(:checked) .landing .text {
+  visibility: hidden;
+  opacity: 0;
+}
+
+  /* Landing End */
+
+  /* Services Start */
+
+  .header-title-p {
+    font-size: 14px;
+    width: 280px;
+  }
+
+  .services {
+    overflow-x: hidden;
+  }
+
+  .services-container {
+    width: 95vw;
+    grid-template-columns: 90vw;
+    padding: 0 20px;
+  }
+
+  .service {
+    gap: 30px;
+  }
+
+  .service .text {
+    gap: 30px;
+  }
+
+  .service p {
+    font-size: 15px;
+    width: 90vw;
+    transform: translateX(-60px);
+    -webkit-transform: translateX(-60px);
+    -moz-transform: translateX(-60px);
+    -ms-transform: translateX(-60px);
+    -o-transform: translateX(-60px);
+}
+
+  .service i {
+    font-size: 30px;
+  }
+
+  /* Services End */
+
+  /* Design Features Start */
+
+  .design {
+    height: 550px;
+  }
+
+  .design {
+    background-position: 50% 0;
+  }
+
+  .design img {
+    display: none;
+  }
+
+  .design .text {
+    padding: 25px;
+    width: 100%;
+    height: 60%;
+    gap: 35px;
+  }
+
+  .design .text h2 {
+    font-size: 20px;
+  }
+
+  .design li {
+    font-size: 18px;
+    position: relative;
+    transform: translateX(25px);
+    -webkit-transform: translateX(25px);
+    -moz-transform: translateX(25px);
+    -ms-transform: translateX(25px);
+    -o-transform: translateX(25px);
+}
+
+  .design li::before {
+    position: absolute;
+    left: -25px;
+    font-size: initial;
+  }
+
+  .design ul {
+    gap: 35px;
+  }
+
+  /* Design Features End */
+
+  /* Portfolio Start */
+
+  .shuffle {
+    flex-basis: 100%;
+  }
+
+  /* Portfolio End */
+
+  /* Awesome Image Start */
+
+  .awesome-image .text {
+    padding: 25px;
+  }
+
+  .awesome-image h2 {
+    font-size: 18px;
+  }
+
+  /* Awesome Image End */
+
+  /* About Start */
+
+  .about .container {
+    height: 400px;
+  }
+
+  .about-img {
+    width: 350px;
+    transform: translateX(-53%);
+    -webkit-transform: translateX(-53%);
+    -moz-transform: translateX(-53%);
+    -ms-transform: translateX(-53%);
+    -o-transform: translateX(-53%);
+}
+
+  /* About End */
+
+  /* Stats Start */
+
+  .stats {
+    height: fit-content;
+  }
+
+  .stats .container {
+    width: 100vw;
+    padding: 50px 30px;
+  }
+
+  .stats-container {
+    flex-wrap: wrap;
+    height: fit-content;
+    gap: 40px;
+  }
+
+  .stat {
+    flex-basis: 100vw;
+  }
+
+  /* Stats End */
+  
+  /* Skills Start */
+
+  .skills .container {
+    flex-direction: column;
+    gap: 100px;
+  }
+
+  .skills .person p {
+    font-size: 13px;
+  }
+
+  .skills .hr-rule {
+    width: 90vw;
+    left: -40vw;
+  }
+
+  /* Skills End */
+
+  /* Quote Start */
+
+  .quote .text q {
+    font-size: 16px;
+    width: 90vw;
+  }
+
+  /* Quote End */
+
+  /* Pricing Start */
+
+  .plans {
+    flex-wrap: wrap;
+    justify-content: center;
+    width: 100vw;
+    gap: 50px;
+  }
+
+  .plan {
+    flex-basis: 90vw;
+    background-color: #fafafa;
+  }
+
+  /* Pricing End */
+
+
+  /* Subscribe Start */
+
+  .subscribe .container {
+    flex-direction: column;
+    width: 100vw;
+    align-items: center;
+  }
+
+  .subscribe p {
+    width: 90vw;
+  }
+
+  .subscribe .email-input {
+    width: 90vw;
+    height: 60px;
+  }
+
+  .subscribe input {
+    width: 70%;
+  }
+
+  /* Subscribe End */
+
+  /* Contact Us Start */
+
+  .contact-us .container > div {
+    flex-direction: column-reverse;
+    width: 100vw;
+    align-items: center;
+  }
+
+  .address-phone-nums {
+    align-items: center;
+    gap: 50px;
+  }
+
+  .address-phone-nums > div {
+    align-items: center;
+  }
+
+  .contact-us form {
+    width: 90vw;
+  }
+
+  /* Contact Us End */
+
+  /* Footer Start */
+
+  
+
+  /* Footer End */
+
+}
