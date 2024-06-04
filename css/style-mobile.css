@@ -408,7 +408,9 @@
 
   /* Footer Start */
 
-  
+  .footer-shadow {
+    padding: var(--main-padding) 0;
+  }
 
   /* Footer End */
 
