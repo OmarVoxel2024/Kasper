@@ -409,7 +409,7 @@
   /* Footer Start */
 
   .footer-shadow {
-    padding: var(--main-padding) 0;
+    padding: calc(var(--main-padding) * 2) 0;
   }
 
   /* Footer End */
